@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Plugins/">
+    <Project Path="SMT.Plugins.Home/SMT.Plugins.Home.csproj" Id="3f82c262-7837-4ef4-8cd6-1b8e7b85a5c5" />
+    <Project Path="SMT.Plugins.Mods/SMT.Plugins.Mods.csproj" Id="50f42dc1-7000-481c-a80f-67ff315a82ab" />
+  </Folder>
+  <Project Path="SMT.Core/SMT.Core.csproj" Id="f3be8454-f9ca-4a89-ab9f-f4497b19f860" />
+  <Project Path="SMT.Maui/SMT.Maui.csproj" Id="0f415fa7-3769-4ad8-9586-a83b2f36507a">
+    <Deploy />
+  </Project>
+</Solution>

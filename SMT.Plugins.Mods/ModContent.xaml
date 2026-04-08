@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SMT.Mods.ModContent">
+
+    <Grid RowDefinitions="100" ColumnDefinitions="*">
+        <Grid Grid.Row="0">
+            <HorizontalStackLayout BackgroundColor="#1C1C1C" VerticalOptions="Fill">
+                <Image x:Name="ModIcon" Source="dotnet_bot.png" WidthRequest="90" HeightRequest="90"/>
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label x:Name="Name" Text="Mod Example" TextColor="White" FontSize="24" FontAttributes="Bold"/>
+                    <Label x:Name="Version" Text="Version 1.0.4" TextColor="White" FontSize="16"/>
+                    <Label x:Name="Author" Text="Author: " TextColor="White" FontSize="14"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Grid>
+
+        <Grid Grid.Row="0">
+            <Button
+                x:Name="InstallBtn"
+                Text="Install"
+                WidthRequest="130"
+                HeightRequest="15"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Margin="10"/>
+        </Grid>
+    </Grid>
+</ContentView>
