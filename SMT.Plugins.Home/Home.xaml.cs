@@ -92,7 +92,7 @@ public partial class Home : ContentView
 
     private async void CompileBtn_Clicked(object sender, EventArgs e)
     {
-        if (!Directory.Exists(Path.Combine(Core.SMT.TempDirectory, "base")) || !Directory.Exists(Path.Combine(Core.SMT.TempDirectory, "split_asset_pack_install_time")))
+        if (!Directory.Exists(Path.Combine(Core.SMT.TempDirectory, "base")))
         {
             await _main.DisplayAlertAsync("Decomp Not Found!", "Cannot find decompiled APK, try running Import", "Womp", "Womp");
             return;
