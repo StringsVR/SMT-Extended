@@ -11,6 +11,7 @@ public partial class Mods : ContentView
 
     private void RefreshMods()
     {
+        ModContentGrid.Children.Clear();
         foreach (var modPath in Directory.GetFiles(Core.SMT.ModsDirectory))
         {
             CLogger.Info($"Found .ykm at {modPath}");
@@ -46,7 +47,7 @@ public partial class Mods : ContentView
 
         await Task.Run(() =>
         {
-            File.Copy(result.FullPath, Path.Combine(Core.SMT.ModsDirectory, result.FileName));
+            File.Copy(result.FullPath, Path.Combine(Core.SMT.ModsDirectory, result.FileName), true);
         });
 
         RefreshMods();

@@ -61,7 +61,7 @@ public partial class Home : ContentView
                 PickerTitle = "Select an APK",
                 FileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
                 {
-                    { DevicePlatform.WinUI, new[] { ".apks", ".zip" } }
+                    { DevicePlatform.WinUI, new[] { ".apks" } }
                 })
             });
 

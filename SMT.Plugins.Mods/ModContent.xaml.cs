@@ -27,7 +27,7 @@ public partial class ModContent : ContentView
 
         InstallBtn.Command = new Command(async () =>
 		{
-            if (!Directory.Exists(Path.Combine(Core.SMT.TempDirectory, "base")) || !Directory.Exists(Path.Combine(Core.SMT.TempDirectory, "split_asset_pack_install_time")))
+            if (!Directory.Exists(Path.Combine(Core.SMT.TempDirectory, "base")))
             {
                 await _main.DisplayAlertAsync("Decomp Not Found!", "Cannot find decompiled APK, try running Import", "Womp", "Womp");
                 return;
